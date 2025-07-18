@@ -1,6 +1,6 @@
 
 // Contador de amor desde data fictícia
-const startDate = new Date('2020-01-01T00:00:00');
+const startDate = new Date('2024-07-19T00:00:00');
 const counterElement = document.getElementById('loveCounter');
 
 function updateCounter() {
