@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background: url('background.jpg') center/cover fixed no-repeat;
+  color: #fff;
+}
+
+.hero {
+  background: #c60000;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.gallery-section {
+  padding-top: 2rem;  /* Aproxima as fotos da contagem */
+  padding-bottom: 5rem; /* Espaço para afastar do rodapé */
+  text-align: center;
+}
+
+.gallery-section h2,
+.music-section h2,
+.counter-section h2 {
+  color: #ffb6c1;
+}
+
+.counter-section {
+  margin-bottom: 1rem; /* Espaço entre contagem e fotos */
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel img {
+  width: 500px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+.music-embed {
+  max-width: 400px;
+  margin: auto;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: none;
+}
+
+footer {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.music-top {
+  padding: 1rem;
+  text-align: center;
+}
